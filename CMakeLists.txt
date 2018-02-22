@@ -3,7 +3,7 @@
 # Pass the following variables to cmake to control the build:
 # (See Install.txt for more information)
 #
-# -DGAMMARAY_ENFORCE_QT4_BUILD=[true|false]
+-DGAMMARAY_ENFORCE_QT4_BUILD=true
 #  Force building against Qt4, even if Qt5 is found.
 #  Default=false
 #
