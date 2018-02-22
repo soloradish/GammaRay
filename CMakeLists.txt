@@ -3,7 +3,7 @@
 # Pass the following variables to cmake to control the build:
 # (See Install.txt for more information)
 #
--DGAMMARAY_ENFORCE_QT4_BUILD=true
+# -DGAMMARAY_ENFORCE_QT4_BUILD=true
 #  Force building against Qt4, even if Qt5 is found.
 #  Default=false
 #
@@ -175,6 +175,9 @@ gammaray_option(
   "Enforce a build with Qt4 (by default GammaRay looks out for Qt5 first)"
   OFF
 )
+
+# force build qt4 on
+set(GAMMARAY_ENFORCE_QT4_BUILD ON)
 
 set(GAMMARAY_BUILD_UI_DEFAULT ON)
 if(QNXNTO OR ANDROID)
